@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfdfd;
+    margin: 0px;
+    justify-content: center;
+    padding-top: 80px;
+}
+header{
+    margin-top:-90px;
+    margin-bottom: -10px;
+}
+.Titulo{
+    margin-top: -5px;
+}
+header table{
+    background-color: rgb(190, 224, 229)
+}
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+header a:hover{
+    color: rgb(163, 25, 25);
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+footer a:hover{
+    color: rgb(153, 59, 59);
+}
+.Logo{
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-blend-mode: darken;
+}
+
+section h1 {
+    color: rgb(27, 173, 209);
+}
+section P{
+    color: #eba447;
+}
