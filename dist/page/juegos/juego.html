@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/InfoGames.css">
+    <title>Juego</title>
+</head>
+<body>
+<main>
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 ">
+            <a href="\index.html" class="d-flex align-items-center text-decoration-none">
+                <h1 class="m-0 logo">GameLibrary</h1>
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="../../../index.html"  class="nav-link ">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Juegos.html" class="nav-link ">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Generos.html " class="nav-link active ">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre Nosotros</a>
+                </li>
+            </ul>
+            <div class="icon">
+                <a href="#" class="usuario">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="32" height="32"
+                        fill="currentColor"
+                        class="bi bi-person-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    </div>  
+    <div class="container-fluid">
+        <div class="row g-4">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="col-lg-9 contenido1">
+                    <div class="hero-juego mb-4">
+                        <img id="bannerJuego" class="img-fluid rounded w-100">
+                    </div>
+                    <div class="card p-4 mb-4 contenido1">
+                        <h1 id="nombreJuego"></h1>
+                        <p id="descripcionJuego"></p>
+                        <h2 class="txv">Tipo de Experiencia</h2>
+                        <p id="graficosJuego"></p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <strong>Género:</strong>
+                            <span id="generoJuego"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Lanzamiento:</strong>
+                            <span id="lanzamientoJuego"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Valoración:</strong>
+                            <span id="valoracionJuego"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-4 contenido2">
+                    <h3 class="mb-4">
+                        Juegos relacionados
+                    </h3>
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <div class="card h-100 contenido4">
+                                <img id="relacion" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 id="text1"></h5>
+                                    <a id="" class="btn boton1 w-100">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card h-100 contenido4">
+                                <img id="img2" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 id="text2"></h5>
+                                    <a id="" class="btn boton1 w-100">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card h-100 contenido4">
+                                <img id="img3" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 id="text3"></h5>
+                                        <a id="" class="btn boton1 w-100">Ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="card p-3 mb-3 contenido3">
+                        <h5 id="tipo"></h5>
+                        <p id="infola">
+                        </p>
+                        <ul id="list">
+                        </ul>
+                    </div>
+                    <div class="card p-3 mb-3 contenido3">
+                        <h5 class="mb-3">📊 Información</h5>
+                        <div class="d-flex justify-content-between">
+                            <span>Total de juegos</span>
+                            <strong>3</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Más popular</span>
+                            <strong>Elden Ring</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Mejor valorado</span>
+                            <strong >The Witcher 3</strong>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-3 contenido3">
+                        <h5 class="mb-3">🏷 Géneros</h5>
+                        <div class="d-flex flex-column gap-2 ">
+                            <a href="#" class="btn btn-outline-light text-start">Acción</a>
+                            <a href="#" class="btn btn-outline-light text-start">Aventura</a>
+                            <a href="#" class="btn btn-outline-light text-start active">RPG</a>
+                            <a href="#" class="btn btn-outline-light text-start">Estrategia</a>
+                            <a href="#" class="btn btn-outline-light text-start">Terror</a>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-3 contenido3">
+                        <h5 class="mb-3">Juegos populares</h5>
+                        <p>1. Elden Ring ⭐ 4.8</p>
+                        <p>2. The Witcher 3 ⭐ 4.9</p>
+                        <button class="btn boton1 w-100">
+                            Ver mas
+                        </button>
+                    </div>
+                    <div class="card p-3 contenido3">
+                        <h5 class="mb-3">Favoritos</h5>
+                        <p>
+                            Guarda tus juegos favoritos para acceder
+                            rápidamente.
+                        </p>
+                        <button class="btn boton1 w-100">
+                            Añadir a favoritos
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </div> 
+</main>                
+    <script src="/dist/js/juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.hero{
+    margin: 12px 14px;
+    padding: 30px;
+    background: linear-gradient(
+        135deg,
+        #050816 0%,
+        #0A1025 50%,
+        #111827 100%
+    );
+    border: 1px solid var(--color-primario);
+    border-radius: var(--radio);
+    box-shadow:
+        0 0 15px rgba(0,191,255,.8),
+        0 0 30px rgba(0,229,255,.6),
+        0 0 50px rgba(0,229,255,.3);
+    overflow-x: hidden;    
+}
+
+.hero-img{
+    width: none;
+    max-width: 850px;
+    height: auto;
+    filter:
+    drop-shadow(0 0 30px rgba(59,130,246,.9))
+    drop-shadow(0 0 70px rgba(139,92,246,.8));
+    transition: all 0.4s ease;
+    cursor: pointer;
+    animation: flotar 4s ease-in-out infinite;
+}
+/* Este keyframes es para la animacion del subir y bajar del mando */
+@keyframes flotar{
+    0%,100%{
+        transform: translateY(0); /* para el movimiento y es como haci arriba */
+    }
+    50%{
+        transform: translateY(-15px);/* para el movimiento negativo de y como haci abajo*/
+    }
+}
+h2{
+    color: azure !important;
+}
+.hero-img:hover{
+    transform: translateY(-10px) scale(1.08) rotate(-3deg);
+}
+
+.form-control:focus{
+    outline: none;
+}
+.lead{
+    color: var(--color-texto-secundario);}
+.filtro{
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: var(--radio);
+    padding: 15px;
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.filtro .nav-link{
+    border: 1px solid var(--color-primario);
+    border-radius: 50px;
+}
+.filtro .nav-link:hover{
+    border-radius: 50px;
+    border-color: var(--color-secundario);
+
+    box-shadow:
+        0 0 10px rgba(168,85,247,.4);
+
+    transform: translateY(-2px);
+}
+.filtro .nav-link.active{
+    color: rgb(153, 78, 229) !important; /* sirve para que el codigo sea mas importante que la antigua opcion*/
+    background-color: var(--color-fondo-secundario) !important;
+    text-shadow: 0 0 8px rgb(105, 0, 191);
+}
+.destacados{
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: var(--radio);
+    padding: 20px;
+
+    box-shadow:
+    0 0 10px rgba(0,191,255,.6),
+    0 0 20px rgba(0,191,255,.4),
+    0 0 40px rgba(0,229,255,.2);
+}
+.card{
+    background-color: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: var(--radio);
+    transition: all .3s ease;
+    height: 100%;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 10px rgba(124,58,237,.4),
+        0 0 20px rgba(124,58,237,.2);
+} 
+

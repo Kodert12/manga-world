@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generos</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/generos.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 ">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <h3 class="m-0 logo">GameLibrary</h3>
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="../../index.html"  class="nav-link ">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Juegos.html" class="nav-link">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Generos.html" class="nav-link active">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="SobreNosotros.html" class="nav-link">Sobre Nosotros</a>
+                </li>
+            </ul>
+            <div class="icon">
+                <a href="#" class="usuario">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="32" height="32"
+                        fill="currentColor"
+                        class="bi bi-person-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="hero">
+            <div class="container col-xxl-8 py-4 mt-4">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="" class="d-block mx-lg-auto img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="txv mb-3">Juegos</h2>
+                    <P class="lead">Explora nuestra coleccion varia de Videojuegos.</P>
+                </div>
+            </div>
+        </div>
+    <div class="container-fluid py-4">
+        <div class="row g-3">
+            <!-- busqueda tipo filtro check para tipo de genero -->
+            <div class="col-lg-2 ">
+                <div class="card p-3 h-100 filtrocheck">
+                    <h5 class="mb-3 txv">🎮 Géneros</h5>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="accion">
+                        <label class="form-check-label txv" for="accion">Acción</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="aventura">
+                        <label class="form-check-label txv" for="aventura">Aventura</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="rpg">
+                        <label class="form-check-label txv" for="rpg">RPG</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="terror">
+                        <label class="form-check-label txv" for="terror">Terror</label>
+                    </div>
+                    <button class="btn boton1 mt-3">
+                        Limpiar filtros
+                    </button>
+                </div>
+            </div>
+            <!-- EL centro del row-->
+            <div class="col-lg-8">
+                <div class="card p-3 contenidoimg ">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="txv">Mostrando 7 juegos</h5>
+                        <select class="form-select w-auto">
+                            <option>Popularidad</option>
+                            <option>Nombre</option>
+                            <option>Fecha</option>
+                        </select>
+                    </div>
+                    <div class="row g-4">
+                        <!-- juegos que estaran dentro del contenedor -->
+                        <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                               <img src="https://i.pinimg.com/236x/50/43/09/504309c7034940d2f30364a9e3664e9d.jpg"class="card-img"alt="GTA V"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h2 class="card-title txv">GTA V</h2>
+                                    <p class="card-text text-light ">
+                                        Mundo abierdo lleno de acción y missiones para pasar el rato
+                                    </p>
+                                        <span class="text-warning">⭐ 9.8</span>
+                                        <a href="Juegos/GTAV.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg"class="card-img"alt="Minecraft"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">Minecraft</h3>
+                                    <p class="card-text text-light">
+                                        Minecraft es un videojuego de construcción y supervivencia de mundo abierto
+                                    </p>
+                                        <span class="text-warning">⭐ 9.8</span>
+                                        <a href="Juegos/Minecraft.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://sm.ign.com/ign_latam/game/g/god-of-war/god-of-war-ragnarok_e91t.jpg"class="card-img"alt="God of ward"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">God of ward</h3>
+                                    <p class="card-text text-light">
+                                        La historia sigue la brutal y trágica vida de Kratos, un guerrero espartano que busca venganza y que, tras años de ira, intenta redimirse como padre en tierras mitológicas.
+                                    </p>
+                                        <span class="text-warning">⭐ 9.3</span>
+                                        <a href="Juegos/GOD OF WAR.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiDxrNtED93d5tsuhnq4JW_px9b_jANDsWg&s"class="card-img"alt="Backroom"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">Backroom</h3>
+                                    <p class="card-text text-light">
+                                        Los Backrooms son una leyenda urbana de internet y un fenómeno de terror psicológico sobre una dimensión alterna
+                                    </p>
+                                        <span class="text-warning">⭐ 8.8</span>
+                                        <a href="Juegos/Backroom.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1767883716"class="card-img"alt="Backroom"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">ELDEN RING</h3>
+                                    <p class="card-text text-light">
+                                        MElden Ring trata sobre un guerrero exiliado conocido como Sinluz que regresa a un mundo fantástico llamado las Tierras Intermedias
+                                    </p>
+                                        <span class="text-warning">⭐ 9.8</span>
+                                        <a href="Juegos/Eldering.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Hollow_Knight_2026_cover_art.jpg/250px-Hollow_Knight_2026_cover_art.jpg"class="card-img"alt="Backroom"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">Hollow Knight</h3>
+                                    <p class="card-text text-light">
+                                        Hollow Knight es un videojuego de acción y exploración (metroidvania)
+                                    </p>
+                                        <span class="text-warning">⭐ 9.5</span>
+                                        <a href="Juegos/HollowKnight.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3">
+                            <div class="card juego-card h-100">
+                                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png"class="card-img"alt="Backroom"> 
+                                <div class="card-body d-flex flex-column card-overlay">
+                                    <h3 class="card-title txv">The Witcher 3</h3>
+                                    <p class="card-text text-light">
+                                        The Witcher 3: Wild Hunt es un juego de rol de acción en un mundo abierto. Controlas a Geralt de Rivia, un brujo y cazador de monstruos a sueldo.
+                                    </p>
+                                        <span class="text-warning">⭐ 9.8</span>
+                                        <a href="Juegos/The Witcher.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- parte del lado derecho para mas cosas-->
+            <div class="col-lg-2 ">
+                <div class="card p-3 mb-3 lateralinfo">
+                    <h5 class=" txv">Géneros Populares</h5>
+                    <p class=" txv">Acción (2)</p>
+                    <p class=" txv">Aventura (2)</p>
+                    <p class=" txv">RPG (3)</p>
+                    <p class=" txv">Deportes (2)</p>
+                </div>
+                <div class="card p-3 mb-3 lateralinfo">
+                    <h5 class=" txv">Recomendados</h5>
+                    <p class=" txv">Descubre juegos según tus gustos.</p>
+                    <button class="btn boton1 w-100 ">
+                        Ver recomendaciones
+                    </button>
+                </div>
+                <div class="card p-3 lateralinfo">
+                    <h5 class=" txv">Destacado</h5>
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png"
+                        class="img-fluid rounded mb-3">
+                    <h6>The Witcher</h6>
+                    <a href="Juegos/The Witcher.html" class="btn btn-sm boton1 mt-2">Ver Mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="footer-logo">
+                        <i class="bi bi-controller"></i> GameLibrary
+                    </h5>
+                    <p class="footer-text">
+                        Tu biblioteca definitiva de videojuegos.
+                        Descubre, explora y juega sin límites.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer-title">NAVEGACIÓN</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="\index.html">Inicio</a></li>
+                        <li><a href="Juegos.html">Novedades</a></li>
+                        <li><a href="Géneros.html">Géneros</a></li>
+                        <li><a href="SobreNosotros.html">Favoritos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer-title">AYUDA</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy text-center mt-4">
+                © 2024 GameLibrary. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>

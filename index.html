@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameLibary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/style/style.css">
+    <link rel="stylesheet" href="dist/style/inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 ">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <h1 class="m-0 logo">GameLibrary</h1>
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="../../index.html"  class="nav-link active ">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dist/page/Juegos.html" class="nav-link ">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dist/page/Generos.html" class="nav-link">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dist/page/SobreNosotros.html" class="nav-link">Sobre Nosotros</a>
+                </li>
+            </ul>
+            <div class="icon">
+                <a href="#" class="usuario">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="32" height="32"
+                        fill="currentColor"
+                        class="bi bi-person-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="hero">
+            <div class=" container col-xxl-10 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-lg-6 text-center order-1 ">
+                        <img src="dist/img/mando.png" class="img-fluid hero-img" alt="mando" width="700" height="500" loading="laze">
+                    </div>
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 texv">Tu Biblioteca de Videojuegos</h2>
+                        <p class="lead">Explora,descubre y encuentra tus juegos favoritos.</p>
+                            <form class="mb-3  search-box">
+                                <input type="search" class="form-control" placeholder="Buscar un videojuego">
+                            </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+                            <a type="button" class="btn btn-primary btn-lg px-4 me-md-2 boton1" href="dist/page/Generos.html">Explorar Juegos</a>
+                            <button type="button" class="btn btn-outline-secundary btn-lg px-4 boton2">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-4 ">
+                <div class="destacados">
+                    <h2 class="mb-4">JUEGOS DESTACADOS</h2>
+                    <div class="row g-4">
+                       <div class="col-md-2 ">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/236x/50/43/09/504309c7034940d2f30364a9e3664e9d.jpg" class="card-img-top" alt="GTA V" width="200" height="400">
+                                <div class="card-body">
+                                        <span class="badge bg-primary">Acción</span>
+                                        <h5 class="card-title mt-2">GTA V</h5>
+                                        <p class="card-text text-secondary">
+                                            Mundo abierto lleno de acción y misiones.
+                                        </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-warning">⭐ 4.8</span>
+                                        <a href="dist/page/juegos/GTAV.html" class="btn btn-sm boton1">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="card h-100">
+                                    <img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg" class="card-img-top" alt="Minecraft">
+                                    <div class="card-body">
+                                        <span class="badge bg-primary">Aventura</span>
+                                            <h5 class="card-title mt-2">Minecraft</h5>
+                                            <p class="card-text text-secondary">   
+                                                Un mundo muy cuadrado
+                                            </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-warning">⭐ 4.9</span>
+                                            <a href="dist/page/juegos/Minecraft.html" class="btn btn-sm boton1">Ver más</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100">
+                                    <img src="https://sm.ign.com/ign_latam/game/g/god-of-war/god-of-war-ragnarok_e91t.jpg" class="card-img-top" alt="God of War">
+                                <div class="card-body">
+                                        <span class="badge bg-primary">Accion</span>
+                                        <span class="badge bg-primary">Aventura</span>
+                                        <h5 class="card-title mt-2">God of War</h5>
+                                           <p class="card-text text-secondary">   
+                                            Los dioses me han abandonado ?
+                                        </p>
+                                         <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-warning">⭐ 4.9</span>
+                                            <a href="dist/page/juegos/GOD OF WAR.html" class="btn btn-sm boton1">Ver más</a>
+                                        </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-md-2">
+                            <div class="card h-100">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Hollow_Knight_2026_cover_art.jpg/250px-Hollow_Knight_2026_cover_art.jpg" class="card-img-top" alt="Hollow Knight">
+                                <div class="card-body">
+                                      <span class="badge bg-primary">Aventura</span>
+                                        <span class="badge bg-primary">Accion</span>
+                                        <h5>Hollow Knight</h5>
+                                        <p class="card-text text-secondary">
+                                            Un casos que resolver pero la dificultad esta todo bien ?
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-warning">⭐ 4.9</span>
+                                            <a href="dist/page/juegos/HollowKnight.html" class="btn btn-sm boton1">Ver más</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="footer-logo">
+                        <i class="bi bi-controller"></i> GameLibrary
+                    </h5>
+                    <p class="footer-text">
+                        Tu biblioteca definitiva de videojuegos.
+                        Descubre, explora y juega sin límites.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer-title">NAVEGACIÓN</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="dist/page/Juegos.html">Novedades</a></li>
+                        <li><a href="dist/page/Generos.html">Géneros</a></li>
+                        <li><a href="dist/page/SobreNosotros.html">Sobre Nosotros </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer-title">AYUDA</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy text-center mt-4">
+                © 2024 GameLibrary. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
